@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4EF2FAEC17F5F0A50065A590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF2FAEB17F5F0A50065A590 /* Foundation.framework */; };
-		4EF2FAF117F5F0A50065A590 /* TYSPhotoViewer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4EF2FAF017F5F0A50065A590 /* TYSPhotoViewer.h */; };
-		4EF2FAF317F5F0A50065A590 /* TYSPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2FAF217F5F0A50065A590 /* TYSPhotoViewer.m */; };
 		4EF2FAFA17F5F0A50065A590 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF2FAF917F5F0A50065A590 /* XCTest.framework */; };
 		4EF2FAFB17F5F0A50065A590 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF2FAEB17F5F0A50065A590 /* Foundation.framework */; };
 		4EF2FAFD17F5F0A50065A590 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF2FAFC17F5F0A50065A590 /* UIKit.framework */; };
 		4EF2FB0017F5F0A50065A590 /* libTYSPhotoViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF2FAE817F5F0A50065A590 /* libTYSPhotoViewer.a */; };
 		4EF2FB0617F5F0A50065A590 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4EF2FB0417F5F0A50065A590 /* InfoPlist.strings */; };
 		4EF2FB0817F5F0A50065A590 /* TYSPhotoViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2FB0717F5F0A50065A590 /* TYSPhotoViewerTests.m */; };
+		4EF2FB7C17F8B2CB0065A590 /* TYSImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2FB7717F8B2CB0065A590 /* TYSImageScrollView.m */; };
+		4EF2FB7D17F8B2CB0065A590 /* TYSPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2FB7917F8B2CB0065A590 /* TYSPhoto.m */; };
+		4EF2FB7E17F8B2CB0065A590 /* TYSPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2FB7B17F8B2CB0065A590 /* TYSPhotoViewer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				4EF2FAF117F5F0A50065A590 /* TYSPhotoViewer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +45,18 @@
 		4EF2FAE817F5F0A50065A590 /* libTYSPhotoViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTYSPhotoViewer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF2FAEB17F5F0A50065A590 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EF2FAEF17F5F0A50065A590 /* TYSPhotoViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TYSPhotoViewer-Prefix.pch"; sourceTree = "<group>"; };
-		4EF2FAF017F5F0A50065A590 /* TYSPhotoViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSPhotoViewer.h; sourceTree = "<group>"; };
-		4EF2FAF217F5F0A50065A590 /* TYSPhotoViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSPhotoViewer.m; sourceTree = "<group>"; };
 		4EF2FAF817F5F0A50065A590 /* TYSPhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYSPhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF2FAF917F5F0A50065A590 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4EF2FAFC17F5F0A50065A590 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4EF2FB0317F5F0A50065A590 /* TYSPhotoViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TYSPhotoViewerTests-Info.plist"; sourceTree = "<group>"; };
 		4EF2FB0517F5F0A50065A590 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4EF2FB0717F5F0A50065A590 /* TYSPhotoViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSPhotoViewerTests.m; sourceTree = "<group>"; };
+		4EF2FB7617F8B2CB0065A590 /* TYSImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYSImageScrollView.h; path = ../TYSImageScrollView.h; sourceTree = "<group>"; };
+		4EF2FB7717F8B2CB0065A590 /* TYSImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYSImageScrollView.m; path = ../TYSImageScrollView.m; sourceTree = "<group>"; };
+		4EF2FB7817F8B2CB0065A590 /* TYSPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TYSPhoto.h; path = ../TYSPhoto.h; sourceTree = "<group>"; };
+		4EF2FB7917F8B2CB0065A590 /* TYSPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TYSPhoto.m; path = ../TYSPhoto.m; sourceTree = "<group>"; };
+		4EF2FB7A17F8B2CB0065A590 /* TYSPhotoViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSPhotoViewer.h; sourceTree = SOURCE_ROOT; };
+		4EF2FB7B17F8B2CB0065A590 /* TYSPhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSPhotoViewer.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,12 @@
 		4EF2FAED17F5F0A50065A590 /* TYSPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				4EF2FAF017F5F0A50065A590 /* TYSPhotoViewer.h */,
-				4EF2FAF217F5F0A50065A590 /* TYSPhotoViewer.m */,
+				4EF2FB7617F8B2CB0065A590 /* TYSImageScrollView.h */,
+				4EF2FB7717F8B2CB0065A590 /* TYSImageScrollView.m */,
+				4EF2FB7817F8B2CB0065A590 /* TYSPhoto.h */,
+				4EF2FB7917F8B2CB0065A590 /* TYSPhoto.m */,
+				4EF2FB7A17F8B2CB0065A590 /* TYSPhotoViewer.h */,
+				4EF2FB7B17F8B2CB0065A590 /* TYSPhotoViewer.m */,
 				4EF2FAEE17F5F0A50065A590 /* Supporting Files */,
 			);
 			path = TYSPhotoViewer;
@@ -224,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF2FAF317F5F0A50065A590 /* TYSPhotoViewer.m in Sources */,
+				4EF2FB7E17F8B2CB0065A590 /* TYSPhotoViewer.m in Sources */,
+				4EF2FB7C17F8B2CB0065A590 /* TYSImageScrollView.m in Sources */,
+				4EF2FB7D17F8B2CB0065A590 /* TYSPhoto.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
